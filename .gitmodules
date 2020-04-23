@@ -1,39 +1,47 @@
 [submodule "karunit"]
 	path = karunit
 	url = git@github.com:xavi-b/karunit.git
-    branch = develop
+    branch = master
+    ignore = all
 
 [submodule "karunit_alsa_sound"]
 	path = karunit_alsa_sound
 	url = git@github.com:xavi-b/karunit_alsa_sound.git
-    branch = develop
+    branch = master
+    ignore = all
 
 [submodule "karunit_bluetoothmusic"]
 	path = karunit_bluetoothmusic
 	url = git@github.com:xavi-b/karunit_bluetoothmusic.git
-    branch = develop
+    branch = master
+    ignore = all
 
 [submodule "karunit_bluez"]
 	path = karunit_bluez
 	url = git@github.com:xavi-b/karunit_bluez.git
-    branch = develop
+    branch = master
+    ignore = all
 
 [submodule "karunit_camera"]
 	path = karunit_camera
 	url = git@github.com:xavi-b/karunit_camera.git
-    branch = develop
+    branch = master
+    ignore = all
 
 [submodule "karunit_google_contacts"]
 	path = karunit_google_contacts
 	url = git@github.com:xavi-b/karunit_google_contacts.git
-    branch = develop
+    branch = master
+    ignore = all
 
 [submodule "karunit_ofono"]
 	path = karunit_ofono
 	url = git@github.com:xavi-b/karunit_ofono.git
-    branch = develop
+    branch = master
+    ignore = all
 
 [submodule "karunit_whatsapp"]
 	path = karunit_whatsapp
 	url = git@github.com:xavi-b/karunit_whatsapp.git
-    branch = develop
+    branch = master
+    ignore = all
