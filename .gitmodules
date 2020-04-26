@@ -45,3 +45,9 @@
 	url = git@github.com:xavi-b/karunit_whatsapp.git
     branch = master
     ignore = all
+
+[submodule "karunit_nav"]
+	path = karunit_nav
+	url = git@github.com:xavi-b/karunit_nav.git
+    branch = master
+    ignore = all

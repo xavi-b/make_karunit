@@ -7,6 +7,7 @@ SUBDIRS += \
     karunit_bluez  \
     karunit_camera  \
     karunit_google_contacts  \
+    karunit_nav  \
     karunit_ofono  \
     karunit_whatsapp
 
