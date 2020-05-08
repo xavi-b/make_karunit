@@ -51,3 +51,15 @@
 	url = git@github.com:xavi-b/karunit_nav.git
     branch = master
     ignore = all
+
+[submodule "karunit_assistant"]
+	path = karunit_assistant
+	url = https://github.com/xavi-b/karunit_assistant.git
+    branch = master
+    ignore = all
+
+[submodule "karunit_wifi"]
+	path = karunit_wifi
+	url = https://github.com/xavi-b/karunit_wifi.git
+    branch = master
+    ignore = all

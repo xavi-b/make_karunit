@@ -9,6 +9,8 @@ SUBDIRS += \
     karunit_google_contacts  \
     karunit_nav  \
     karunit_ofono  \
+    karunit_assistant  \
+    karunit_wifi  \
     karunit_whatsapp
 
 CONFIG += ordered
