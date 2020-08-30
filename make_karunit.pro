@@ -11,6 +11,6 @@ SUBDIRS += \
     karunit_ofono  \
 #    karunit_assistant  \
     karunit_wifi  \
-    karunit_whatsapp
+#    karunit_whatsapp
 
 CONFIG += ordered
