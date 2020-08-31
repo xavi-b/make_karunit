@@ -20,7 +20,7 @@ https://learn.adafruit.com/adafruit-ultimate-gps-hat-for-raspberry-pi/overview
 
 # Install
 ```bash
-sudo echo "/usr/local/lib" > /etc/ld.so.conf.d/karunit_local.conf
+sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/karunit_local.conf'
 sudo ldconfig
 qmake
 make
