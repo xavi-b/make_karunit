@@ -7,6 +7,15 @@ sudo apt update && sudo apt install \
     libkf5bluezqt-dev \
     qtconnectivity5-dev \
     qtdeclarative5-dev \
+    qtquickcontrols2-5-dev \
+    qtpositioning5-dev \
+    qtlocation5-dev \
+    qml-module-qtquick-shapes \
+    qml-module-qtquick-xmllistmodel \
+    qml-module-qtquick-controls2 \
+    qml-module-qtlocation \
+    qml-module-qtpositioning \
+    qml-module-qtmultimedia \
     libkf5networkmanagerqt-dev \
     ofono \
     bluez \
