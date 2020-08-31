@@ -10,6 +10,8 @@ sudo apt update && sudo apt install \
     qtquickcontrols2-5-dev \
     qtpositioning5-dev \
     qtlocation5-dev \
+    qtmultimedia5-dev \
+    libqt5multimedia5-plugins \
     qml-module-qtquick-shapes \
     qml-module-qtquick-xmllistmodel \
     qml-module-qtquick-controls2 \
