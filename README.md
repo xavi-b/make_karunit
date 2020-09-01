@@ -29,12 +29,19 @@ sudo apt update && sudo apt install \
     pulseaudio-module-bluetooth \
     bluez-tools \
     pavucontrol
- 
+
 sudo gpasswd -a pi pulse
 sudo gpasswd -a pi lp
 sudo gpasswd -a pulse lp
 sudo gpasswd -a pi audio
 sudo gpasswd -a pulse audio
+
+sudo apt install network-manager --download-only
+sudo apt purge openresolv dhcpcd5
+sudo echo "[device]" > /etc/NetworkManager/conf.d/mac.conf
+sudo echo "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/conf.d/mac.conf
+sudo apt install network-manager
+sudo systemctl restart NetworkManager
 ```
 
 # Configure
