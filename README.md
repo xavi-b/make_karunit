@@ -1,5 +1,5 @@
 # Dependencies
-## Debian
+## Raspbian testing
 ```bash
 sudo apt update && sudo apt install \
     qt5-default \
