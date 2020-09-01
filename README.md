@@ -1,6 +1,9 @@
 # Dependencies
 ## Raspbian testing
 ```bash
+sudo echo "deb http://raspbian.raspberrypi.org/raspbian/ testing main contrib non-free rpi" >> /etc/apt/sources.list
+sudo echo "deb http://archive.raspbian.org/raspbian/ testing main" >> /etc/apt/sources.list.d/raspi.list
+
 sudo apt update && sudo apt install \
     qt5-default \
     libasound2-dev \
@@ -22,7 +25,16 @@ sudo apt update && sudo apt install \
     ofono \
     bluez \
     gpsd \
-    fonts-font-awesome
+    fonts-font-awesome \
+    pulseaudio-module-bluetooth \
+    bluez-tools \
+    pavucontrol
+ 
+sudo gpasswd -a pi pulse
+sudo gpasswd -a pi lp
+sudo gpasswd -a pulse lp
+sudo gpasswd -a pi audio
+sudo gpasswd -a pulse audio
 ```
 
 # Configure
