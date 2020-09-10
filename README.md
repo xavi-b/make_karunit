@@ -42,6 +42,10 @@ sudo echo "[device]" > /etc/NetworkManager/conf.d/mac.conf
 sudo echo "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/conf.d/mac.conf
 sudo apt install network-manager
 sudo systemctl restart NetworkManager
+
+sudo cp karunit_gpsd.service /etc/systemd/system/.
+sudo systemctl enable karunit_gpsd
+sudo systemctl start karunit_gpsd
 ```
 
 # Configure
