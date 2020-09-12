@@ -60,3 +60,9 @@ qmake
 make
 sudo make install
 ```
+
+# Autostart
+```
+mkdir -p /home/pi/.config/autostart/
+cp karunit.desktop /home/pi/.config/autostart/.
+```

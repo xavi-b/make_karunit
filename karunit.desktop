@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=karunit
+Exec=/usr/local/bin/karunit
