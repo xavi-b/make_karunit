@@ -4,11 +4,8 @@ git clone --recurse-submodules git@github.com:xavi-b/make_karunit.git
 ```
 
 # Dependencies
-## Raspbian testing
+## Raspbian
 ```bash
-sudo echo "deb http://raspbian.raspberrypi.org/raspbian/ testing main contrib non-free rpi" >> /etc/apt/sources.list
-sudo echo "deb http://archive.raspbian.org/raspbian/ testing main" >> /etc/apt/sources.list.d/raspi.list
-
 sudo apt update && sudo apt install -y \
     qt5-default \
     libasound2-dev \
@@ -49,6 +46,8 @@ sudo systemctl start karunit_gpsd
 ```
 
 # Configure
+## Bluetooth Audio Sink
+https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=247892&p=1513571
 ## Adafruit Ultimate GPS Hat
 https://learn.adafruit.com/adafruit-ultimate-gps-hat-for-raspberry-pi/overview
 
