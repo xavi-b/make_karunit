@@ -1,10 +1,15 @@
+# Clone
+```
+git clone --recurse-submodules git@github.com:xavi-b/make_karunit.git
+```
+
 # Dependencies
 ## Raspbian testing
 ```bash
 sudo echo "deb http://raspbian.raspberrypi.org/raspbian/ testing main contrib non-free rpi" >> /etc/apt/sources.list
 sudo echo "deb http://archive.raspbian.org/raspbian/ testing main" >> /etc/apt/sources.list.d/raspi.list
 
-sudo apt update && sudo apt install \
+sudo apt update && sudo apt install -y \
     qt5-default \
     libasound2-dev \
     libkf5bluezqt-dev \
@@ -22,25 +27,20 @@ sudo apt update && sudo apt install \
     qml-module-qtpositioning \
     qml-module-qtmultimedia \
     libkf5networkmanagerqt-dev \
+    qtdeclarative5-private-dev \
+    qtbase5-private-dev \
     ofono \
     bluez \
     gpsd \
     fonts-font-awesome \
-    pulseaudio-module-bluetooth \
-    bluez-tools \
-    pavucontrol
+    bluez-tools
 
-sudo gpasswd -a pi pulse
-sudo gpasswd -a pi lp
-sudo gpasswd -a pulse lp
-sudo gpasswd -a pi audio
-sudo gpasswd -a pulse audio
-
-sudo apt install network-manager --download-only
-sudo apt purge openresolv dhcpcd5
-sudo echo "[device]" > /etc/NetworkManager/conf.d/mac.conf
-sudo echo "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/conf.d/mac.conf
-sudo apt install network-manager
+sudo apt install network-manager --download-only -y
+sudo apt purge openresolv dhcpcd5 -y
+sudo mkdir -p /etc/NetworkManager/conf.d/
+sudo sh -c 'echo "[device]" > /etc/NetworkManager/conf.d/mac.conf'
+sudo sh -c 'echo "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/conf.d/mac.conf'
+sudo apt install network-manager network-manager-gnome -y
 sudo systemctl restart NetworkManager
 
 sudo cp karunit_gpsd.service /etc/systemd/system/.
