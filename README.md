@@ -49,6 +49,8 @@ sudo cp aplay.service /etc/systemd/system/.
 sudo systemctl enable aplay
 sudo systemctl start aplay
 
+cp .asoundrc ~/.
+
 sudo reboot
 ```
 
