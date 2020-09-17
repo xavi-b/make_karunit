@@ -43,6 +43,13 @@ sudo systemctl restart NetworkManager
 sudo cp karunit_gpsd.service /etc/systemd/system/.
 sudo systemctl enable karunit_gpsd
 sudo systemctl start karunit_gpsd
+
+sudo cp -f bluealsa.service /lib/systemd/system/bluealsa.service
+sudo cp aplay.service /etc/systemd/system/.
+sudo systemctl enable aplay
+sudo systemctl start aplay
+
+sudo reboot
 ```
 
 # Configure
