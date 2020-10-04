@@ -6,4 +6,4 @@ After=bluetooth.service
 [Service]
 Type=simple
 User=root
-ExecStart=/usr/bin/bluealsa --profile=a2dp-sink
+ExecStart=/usr/bin/bluealsa --profile=a2dp-sink --profile=hfp-ofono

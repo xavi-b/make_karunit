@@ -1,0 +1,13 @@
+[Unit]
+Description=BlueALSA Ofono aplay service
+After=bluealsa.service
+Requires=bluealsa.service
+
+[Service]
+Type=simple
+User=pi
+ExecStartPre=/bin/sleep 20
+ExecStart=/usr/bin/bluealsa-aplay -vv --profile-sco -d ofonoalsadmix 00:00:00:00:00:00
+
+[Install]
+WantedBy=multi-user.target

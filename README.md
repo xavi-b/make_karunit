@@ -44,10 +44,21 @@ sudo cp karunit_gpsd.service /etc/systemd/system/.
 sudo systemctl enable karunit_gpsd
 sudo systemctl start karunit_gpsd
 
+sudo apt install autoreconf autoconf libtool libasound2-dev libbluetooth-dev libdbus-1-dev libfaad-dev libglib2.0-dev ofono-dev libsbc-dev
+git clone git@github.com:raspberrypi-ui/bluealsa.git && cd bluealsa/
+autoreconf --install
+mkdir build && cd build
+../configure --enable-ofono --enable-debug --enable-aplay
+make -j4
+sudo make install
+
 sudo cp -f bluealsa.service /lib/systemd/system/bluealsa.service
 sudo cp aplay.service /etc/systemd/system/.
 sudo systemctl enable aplay
 sudo systemctl start aplay
+sudo cp ofonoplay.service /etc/systemd/system/.
+sudo systemctl enable ofonoplay
+sudo systemctl start ofonoplay
 
 cp .asoundrc ~/.
 
