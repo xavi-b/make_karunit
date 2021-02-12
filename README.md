@@ -26,6 +26,7 @@ sudo apt update && sudo apt install -y \
     libkf5networkmanagerqt-dev \
     qtdeclarative5-private-dev \
     qtbase5-private-dev \
+    kirigami2-dev \
     ofono \
     bluez \
     gpsd \
