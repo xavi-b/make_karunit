@@ -63,3 +63,9 @@
 	url = git@github.com:xavi-b/karunit_wifi.git
     branch = master
     ignore = all
+
+[submodule "karunit_led_display"]
+	path = karunit_led_display
+	url = git@github.com:xavi-b/karunit_led_display.git
+    branch = master
+    ignore = all
