@@ -10,8 +10,6 @@ SUBDIRS += \
     karunit_led_display  \
     karunit_nav  \
     karunit_ofono  \
-#    karunit_assistant  \
     karunit_wifi  \
-#    karunit_whatsapp
 
 CONFIG += ordered

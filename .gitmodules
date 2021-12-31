@@ -40,21 +40,9 @@
     branch = master
     ignore = all
 
-[submodule "karunit_whatsapp"]
-	path = karunit_whatsapp
-	url = git@github.com:xavi-b/karunit_whatsapp.git
-    branch = master
-    ignore = all
-
 [submodule "karunit_nav"]
 	path = karunit_nav
 	url = git@github.com:xavi-b/karunit_nav.git
-    branch = master
-    ignore = all
-
-[submodule "karunit_assistant"]
-	path = karunit_assistant
-	url = git@github.com:xavi-b/karunit_assistant.git
     branch = master
     ignore = all
 
