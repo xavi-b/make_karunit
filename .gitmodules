@@ -2,58 +2,48 @@
 	path = karunit
 	url = git@github.com:xavi-b/karunit.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_alsa_sound"]
 	path = karunit_alsa_sound
 	url = git@github.com:xavi-b/karunit_alsa_sound.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_bluetoothmusic"]
 	path = karunit_bluetoothmusic
 	url = git@github.com:xavi-b/karunit_bluetoothmusic.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_bluez"]
 	path = karunit_bluez
 	url = git@github.com:xavi-b/karunit_bluez.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_camera"]
 	path = karunit_camera
 	url = git@github.com:xavi-b/karunit_camera.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_google_contacts"]
 	path = karunit_google_contacts
 	url = git@github.com:xavi-b/karunit_google_contacts.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_ofono"]
 	path = karunit_ofono
 	url = git@github.com:xavi-b/karunit_ofono.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_nav"]
 	path = karunit_nav
 	url = git@github.com:xavi-b/karunit_nav.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_wifi"]
 	path = karunit_wifi
 	url = git@github.com:xavi-b/karunit_wifi.git
 	branch = master
-	ignore = all
 
 [submodule "karunit_led_display"]
 	path = karunit_led_display
 	url = git@github.com:xavi-b/karunit_led_display.git
 	branch = master
-	ignore = all
