@@ -47,3 +47,6 @@
 	path = karunit_led_display
 	url = git@github.com:xavi-b/karunit_led_display.git
 	branch = master
+[submodule "karunit_wiringpi"]
+	path = karunit_wiringpi
+	url = git@github.com:xavi-b/karunit_wiringpi.git

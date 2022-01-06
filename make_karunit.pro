@@ -11,5 +11,6 @@ SUBDIRS += \
     karunit_nav  \
     karunit_ofono  \
     karunit_wifi  \
+    karunit_wiringpi  \
 
 CONFIG += ordered
