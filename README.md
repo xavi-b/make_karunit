@@ -7,7 +7,9 @@ git clone --recurse-submodules git@github.com:xavi-b/make_karunit.git
 ## Raspbian
 ```bash
 sudo apt update && sudo apt install -y \
-    qt5-default \
+    g++ \
+    qtbase5-dev \
+    qttools5-dev-tools \
     libasound2-dev \
     libkf5bluezqt-dev \
     qtconnectivity5-dev \
@@ -17,6 +19,8 @@ sudo apt update && sudo apt install -y \
     qtlocation5-dev \
     qtmultimedia5-dev \
     libqt5multimedia5-plugins \
+    libqt5serialport5-dev \
+    libqt5svg5-dev \
     qml-module-qtquick-shapes \
     qml-module-qtquick-xmllistmodel \
     qml-module-qtquick-controls2 \
