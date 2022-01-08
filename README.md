@@ -27,6 +27,7 @@ sudo apt update && sudo apt install -y \
     qml-module-qtlocation \
     qml-module-qtpositioning \
     qml-module-qtmultimedia \
+    qml-module-qt-labs-settings \
     libkf5networkmanagerqt-dev \
     qtdeclarative5-private-dev \
     qtbase5-private-dev \
