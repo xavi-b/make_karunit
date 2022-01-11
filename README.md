@@ -50,30 +50,23 @@ sudo cp karunit_gpsd.service /etc/systemd/system/.
 sudo systemctl enable karunit_gpsd
 sudo systemctl start karunit_gpsd
 
-sudo apt install autoreconf autoconf libtool libasound2-dev libbluetooth-dev libdbus-1-dev libfaad-dev libglib2.0-dev ofono-dev libsbc-dev
-git clone git@github.com:raspberrypi-ui/bluealsa.git && cd bluealsa/
-autoreconf --install
-mkdir build && cd build
-../configure --enable-ofono --enable-debug --enable-aplay
-make -j4
-sudo make install
+sudo apt install -y --no-install-recommends bluez-tools pulseaudio-module-bluetooth
+# sudo cp a2dp-autoconnect /usr/local/bin/a2dp-autoconnect
+# sudo sh -c 'echo "KERNEL==\"input[0-9]*\", RUN+=\"/usr/local/bin/a2dp-autoconnect\"" > /etc/udev/rules.d/99-input.rules'
+sudo sh -c 'echo "[General]" > /etc/bluetooth/audio.conf'
+sudo sh -c 'echo "Class = 0x20041C" >> /etc/bluetooth/audio.conf'
+sudo sh -c 'echo "Enable = Source,Sink,Media,Socket" >> /etc/bluetooth/audio.conf'
+sudo sh -c 'echo "Class = 0x20041C" >> /etc/bluetooth/main.conf'
 
-sudo cp -f bluealsa.service /lib/systemd/system/bluealsa.service
-sudo cp aplay.service /etc/systemd/system/.
-sudo systemctl enable aplay
-sudo systemctl start aplay
-sudo cp ofonoplay.service /etc/systemd/system/.
-sudo systemctl enable ofonoplay
-sudo systemctl start ofonoplay
-
-cp .asoundrc ~/.
+# Ofono
+# https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Bluetooth/#usinghfpwithofono
+# https://askubuntu.com/questions/845195/how-to-set-up-ubuntu-pc-as-bluetooth-headset-to-attend-calls
+# https://wiki.archlinux.org/title/bluetooth_headset#Switch_between_HSP/HFP_and_A2DP_setting
 
 sudo reboot
 ```
 
 # Configure
-## Bluetooth Audio Sink
-https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=247892&p=1513571
 ## Adafruit Ultimate GPS Hat
 https://learn.adafruit.com/adafruit-ultimate-gps-hat-for-raspberry-pi/overview
 
