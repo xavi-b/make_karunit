@@ -3,6 +3,7 @@ TEMPLATE = subdirs
 SUBDIRS += \
     karunit  \
     karunit_alsa_sound  \
+    karunit_assistant  \
     karunit_bluetoothmusic  \
     karunit_bluez  \
     karunit_camera  \
@@ -14,3 +15,5 @@ SUBDIRS += \
     karunit_wiringpi  \
 
 CONFIG += ordered
+
+OTHER_FILES += README.md

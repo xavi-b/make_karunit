@@ -8,6 +8,11 @@
 	url = git@github.com:xavi-b/karunit_alsa_sound.git
 	branch = master
 
+[submodule "karunit_assistant"]
+	path = karunit_assistant
+	url = git@github.com:xavi-b/karunit_assistant.git
+	branch = master
+
 [submodule "karunit_bluetoothmusic"]
 	path = karunit_bluetoothmusic
 	url = git@github.com:xavi-b/karunit_bluetoothmusic.git
@@ -47,6 +52,7 @@
 	path = karunit_led_display
 	url = git@github.com:xavi-b/karunit_led_display.git
 	branch = master
+
 [submodule "karunit_wiringpi"]
 	path = karunit_wiringpi
 	url = git@github.com:xavi-b/karunit_wiringpi.git

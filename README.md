@@ -27,6 +27,13 @@ bluez-qt \
 networkmanager-qt \
 ttf-font-awesome
 
+# Vosk dependency
+sudo pacman -Sy install python3 ffmpeg
+pip3 install vosk
+pip3 install websockets
+python3 -c 'from vosk import Model; model = Model(lang="fr")' # to download fr model
+python3 -c 'from vosk import Model; model = Model(lang="de")' # to download de model
+
 sudo cp karunit_gpsd.service /etc/systemd/system/.
 sudo systemctl enable karunit_gpsd
 sudo systemctl start karunit_gpsd
