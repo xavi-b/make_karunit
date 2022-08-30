@@ -1,8 +1,0 @@
-[Service]
-Type=oneshot
-RemainAfterExit=yes
-ExecStart=gpsd /dev/serial0 -F /var/run/gpsd.sock
-ExecStop=killall gpsd
-
-[Install]
-WantedBy=multi-user.target

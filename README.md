@@ -33,15 +33,14 @@ pip3 install vosk
 pip3 install websockets
 python3 -c 'from vosk import Model; model = Model(lang="fr")' # to download fr model
 python3 -c 'from vosk import Model; model = Model(lang="de")' # to download de model
-
-sudo cp karunit_gpsd.service /etc/systemd/system/.
-sudo systemctl enable karunit_gpsd
-sudo systemctl start karunit_gpsd
 ```
 
 # Configure
-## Adafruit Ultimate GPS Hat
-https://learn.adafruit.com/adafruit-ultimate-gps-hat-for-raspberry-pi/overview
+https://gpswebshop.com/blogs/tech-support-by-os-linux/how-to-connect-an-usb-gps-receiver-with-a-raspberry-pi
+```bash
+sudo systemctl enable gpsd
+sudo systemctl start gpsd
+```
 
 # Install
 ```bash
